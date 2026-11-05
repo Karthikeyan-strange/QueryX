@@ -11,6 +11,8 @@ npm install
 npm run dev
 ```
 
+/
+
 Open the local URL printed by Vite. Run `npm run build` to type-check and create a production build, or `npm run preview` to serve that build locally.
 
 ## Login and roles
