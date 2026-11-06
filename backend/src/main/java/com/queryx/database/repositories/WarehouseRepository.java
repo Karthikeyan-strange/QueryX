@@ -1,0 +1,1 @@
+package com.queryx.database.repositories; import com.queryx.database.entities.Warehouse; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface WarehouseRepository extends JpaRepository<Warehouse,UUID>{Optional<Warehouse> findByWarehouseCode(String code);}

@@ -1,0 +1,3 @@
+package com.queryx.database.entities;
+import jakarta.persistence.*; import java.time.OffsetDateTime; import java.util.UUID;
+@Entity @Table(name="warehouses") public class Warehouse { @Id @GeneratedValue(strategy=GenerationType.UUID) private UUID id; @Column(name="warehouse_code",nullable=false,unique=true,length=50) private String warehouseCode; @Column(nullable=false,length=200) private String name; @Column(nullable=false,length=100) private String region; private String address; @Column(name="created_at",nullable=false) private OffsetDateTime createdAt; public UUID getId(){return id;} public String getWarehouseCode(){return warehouseCode;} public void setWarehouseCode(String v){warehouseCode=v;} }

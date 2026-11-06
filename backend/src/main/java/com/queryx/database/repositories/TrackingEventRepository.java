@@ -1,0 +1,1 @@
+package com.queryx.database.repositories; import com.queryx.database.entities.*; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface TrackingEventRepository extends JpaRepository<TrackingEvent,UUID>{List<TrackingEvent> findByShipmentOrderByOccurredAtAsc(Shipment s);}

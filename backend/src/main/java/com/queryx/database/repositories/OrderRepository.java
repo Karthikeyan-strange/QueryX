@@ -1,0 +1,1 @@
+package com.queryx.database.repositories; import com.queryx.database.entities.*; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface OrderRepository extends JpaRepository<Order,UUID>{Optional<Order> findByOrderNumber(String orderNumber); List<Order> findByCustomer(Customer customer);}
